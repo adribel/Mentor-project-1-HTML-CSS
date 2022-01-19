@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      width: 375px;
+      margin: 0 auto;
+      font-family: 'Outfit', sans-serif;
+      background-color: hsl(217, 54%, 11%);
+    }
+
+    .card {
+      margin: 10% 7%;
+      padding: 7%;
+      border-radius: 5%;
+      background-color: hsl(216, 50%, 16%);
+    }
+
+    .image {
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      height: 270px;
+      border-radius: 5%;
+      background-image: url(images/image-equilibrium.jpg);
+      background-repeat: no-repeat;
+      background-color: hsl(178, 100%, 50%);
+      background-size: 100%;
+      cursor: pointer;
+    }
+
+    h2 {
+      color: hsl(0, 0%, 100%);
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 2.5;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 16px;
+      color: hsl(215, 51%, 70%);
+      font-weight: 300;
+      line-height: 1.4;
+    }
+
+    .author {
+      border-top: 2px solid hsl(215, 32%, 27%);
+      margin: 2% 0;
+      padding-top: 5%;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .author img {
+
+      width: 40px;
+      text-align: left;
+      float: left;
+      border: 1px solid white;
+      border-radius: 50%;
+      margin-right: 10%;
+    }
+
+    .author p {
+      float: left;
+      line-height: 2.5;
+    }
+
+    .author span {
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+
+    }
+
+    .data {
+      margin-bottom: 5%;
+    }
+
+    .data p,
+    .data img {
+      float: left;
+      margin-top: 10%;
+      line-height: 1;
+
+    }
+
+    .data div:nth-of-type(1) p {
+      color: hsl(178, 100%, 50%);
+      font-weight: 400;
+      margin-right: 30%;
+    }
+
+    .data div p {
+      margin-left: 2.5%;
+    }
+
+    span:hover,
+    h2:hover {
+      color: hsl(178, 100%, 50%);
+    }
+
+    .image:hover {
+      box-shadow: inset 0 0 0 1000px hsla(178, 100%, 50%, 0.4);
+      background-image: url(images/icon-view.svg), url(images/image-equilibrium.jpg);
+      background-size: 20%, 100%, 100%;
+      background-position: center center;
+      background-image: -moz-linear-gradient();
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="image"></div>
+    <h2>Equilibrium #3429</h2>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+
+    <div class="data clearfix">
+      <div><img src="images/icon-ethereum.svg" alt="">
+        <p>0.041 ETH</p>
+      </div>
+      <div>
+        <img src="images/icon-clock.svg" alt="">
+        <p>3 days left</p>
+      </div>
+
+    </div>
+
+
+    <div class="author clearfix">
+      <img src="images/image-avatar.png" alt="avatar">
+      <p>Creation of <span>Jules Wyvern</span></p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
